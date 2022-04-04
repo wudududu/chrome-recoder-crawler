@@ -1,0 +1,14 @@
+{
+  "emailConfig": {
+    "host": "smtp.qq.email",
+    "service": "qq",
+    "port": 465,
+    "secureConnection": true,
+    "auth": {
+        "user": "auth@qq.com",
+        "pass": "your smtp pass"
+    },
+    "to": "to@qq.com"
+  },
+  "timespan": 1800000
+}
