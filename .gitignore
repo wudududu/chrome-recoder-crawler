@@ -1,0 +1,4 @@
+node_modules/*
+_config.json
+time-*.js
+err-pic-*.png
