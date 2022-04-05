@@ -1,12 +1,16 @@
+'use strict'
+
 const puppeteer = require('puppeteer');
 const sendMsg = require('./email').sendMsg;
 const isSelectorValid = require('./check-css-selector-isValid');
+
+const argv = process.argv[2];
 const element = null;
 const timeout = 5000;
 
 process.on('unhandledRejection', (reason) => {
   console.log('unhandledRejection', '\n' + reason)
-  sendMsg({
+  sendMsg(argv, {
     unhandledRejection: reason
   })
 
@@ -14,7 +18,7 @@ process.on('unhandledRejection', (reason) => {
 })
 process.on('uncaughtException', (error) => {
   console.log('uncaughtException', error)
-  sendMsg({
+  sendMsg(argv, {
     uncaughtException: error
   })
 
@@ -207,5 +211,5 @@ async function caller(steps) {
 
   await browser.close();
 
-  sendMsg(msgMap)
+  sendMsg(argv, msgMap)
 }
