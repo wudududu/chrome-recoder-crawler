@@ -10,5 +10,7 @@
     },
     "to": "to@qq.com"
   },
-  "timespan": 1800000
+  "timespan": 1800000,
+  "until": "2022/5/31",
+  "recoderFile": "./demo/xiecheng.js"
 }

@@ -1,8 +1,8 @@
 {
-  "name": "heihei",
+  "name": "chrome-recoder-crawler",
   "version": "1.0.0",
-  "description": "",
-  "main": "xc.js",
+  "description": "Based on Google Chrome recorder, implement interface capture and notify the result to the target mailbox",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "jsdom": "^19.0.0",
+    "node-watch": "^0.7.3",
     "nodemailer": "^6.7.2",
     "puppeteer": "^13.1.1"
   }
